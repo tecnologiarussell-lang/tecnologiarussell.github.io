@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Modelo OSI</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #00ccff, #ff6600);
+      color: #0e0d0d;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 15px #00ffff;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    textarea {
+      height: 150px;
+      resize: none;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background: #ff00cc;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #00ffff;
+      color: #000;
+    }
+    .mensaje {
+      margin-top: 1rem;
+      background: rgba(0,255,255,0.2);
+      padding: 1rem;
+      border-radius: 10px;
+      display: none;
+      text-align: center;
+    }
+    .info {
+      margin-top: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <p>Autor/a: Luz Hernández</p>
+  </header>
+
+  <section>
+    <h2>¿Quieres comunicarte conmigo?</h2>
+    <p>
+      Si tienes dudas, sugerencias o comentarios sobre el Modelo OSI, completa el formulario y te responderé lo antes posible.
+    </p>
+
+    <form id="contactoForm">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+      <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+
+    <div class="mensaje" id="mensajeExito">
+      ✅ ¡Gracias por contactarme! Tu mensaje ha sido enviado correctamente.
+    </div>
+
+    <div class="info">
+      <p>📧 Correo: hernandezluzmi574@gmail.com</p>
+      <p>🌐 Universidad Mariano Gálvez</p>
+    </div>
+
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="MODELO OSI 2.html" class="btn">Volver al menú de capas</a>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById('contactoForm');
+    const mensaje = document.getElementById('mensajeExito');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      mensaje.style.display = 'block';
+      form.reset();
+      setTimeout(() => mensaje.style.display = 'none', 4000);
+    });
+  </script>
+</body>
+</html>

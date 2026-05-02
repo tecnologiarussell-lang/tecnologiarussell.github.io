@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capa de Transporte - Modelo OSI</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #03bae7, #f06101);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 15px #00ffff;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+    }
+    section h2 {
+      color: #131312;
+      text-shadow: 0 0 10px #f7f6f3;
+    }
+    section p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 2rem auto;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0,255,255,0.7);
+    }
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .ejemplo {
+      background: rgba(0,0,0,0.4);
+      padding: 1.5rem;
+      border-radius: 15px;
+      margin-top: 2rem;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #ff00cc;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #00ffff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Capa de Transporte</h1>
+    <p>Autor/a: Luz Hernández</p>
+  </header>
+
+  <section>
+    <h2>¿Qué es la Capa de Transporte?</h2>
+    <p>
+      La <strong>Capa de Transporte</strong> es la cuarta del Modelo OSI y se encarga de garantizar que los datos lleguen completos, en orden y sin errores desde el emisor hasta el receptor. 
+      Aquí se utilizan protocolos como TCP y UDP para gestionar la entrega de la información.
+    </p>
+    <img src="imagenes/transporte3d.png" alt="Capa de Transporte en 3D">
+
+    <h2>Funciones principales</h2>
+    <ul>
+      <li>📦 Segmentación de datos en unidades manejables.</li>
+      <li>🔄 Control de errores y retransmisión si es necesario.</li>
+      <li>🧭 Control de flujo para evitar saturación.</li>
+      <li>📑 Reensamblaje de segmentos en el destino.</li>
+      <li>⚡ Selección de protocolos según la necesidad (TCP confiable, UDP rápido).</li>
+    </ul>
+
+    <h2>Ejemplos de protocolos</h2>
+    <ul>
+      <li>TCP (Transmission Control Protocol)</li>
+      <li>UDP (User Datagram Protocol)</li>
+      <li>SCTP (Stream Control Transmission Protocol)</li>
+    </ul>
+
+    <h2>Ejemplo cotidiano</h2>
+    <div class="ejemplo">
+      <p>
+        Imagina que envías un paquete por una empresa de mensajería.  
+        La <strong>Capa de Transporte</strong> es como el servicio que asegura que tu paquete llegue completo y en buen estado.  
+        Si el paquete se daña o se pierde, la empresa lo vuelve a enviar.  
+        TCP funciona como un servicio premium que garantiza la entrega segura, mientras que UDP es como un envío exprés: llega más rápido, pero sin tantas garantías.
+      </p>
+    </div>
+
+    <h2>Importancia</h2>
+    <p>
+      La Capa de Transporte es fundamental porque asegura que la comunicación entre aplicaciones sea confiable y eficiente. 
+      Sin ella, los datos podrían llegar incompletos o desordenados, afectando la calidad de servicios como videollamadas, correos electrónicos o transmisiones en vivo.
+    </p>
+
+    <div style="text-align:center;">
+      <a href="MODELO OSI 2.html" class="btn">Volver al menú de capas</a>
+    </div>
+  </section>
+</body>
+</html>

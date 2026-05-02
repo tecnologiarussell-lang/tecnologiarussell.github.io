@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo OSI</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #00ccff, #6600ff, #ff0066);
+      background-size: 600% 600%;
+      animation: fondoAnimado 20s ease infinite;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    @keyframes fondoAnimado {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.938);
+    }
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 0 #00ffff, 4px 4px 0 #ff00cc;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+    }
+    section h2 {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      margin-bottom: 1rem;
+    }
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 2rem auto;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0,255,255,0.7);
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #ff00cc;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #00ffff;
+      color: #000;
+    }
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Inicio - Modelo OSI</h1>
+    <p>Autor/a: Luz Hernández</p>
+  </header>
+
+  <section>
+    <h2>¿Qué es el Modelo OSI?</h2>
+    <p>
+      El <strong>Modelo OSI (Open Systems Interconnection)</strong> es un marco conceptual que describe cómo los sistemas de comunicación 
+      transmiten datos a través de una red. Divide el proceso en <strong>7 capas</strong>, cada una con funciones específicas, 
+      desde la transmisión física de bits hasta la interacción directa con el usuario.
+    </p>
+  </section>
+
+  <section>
+    <h2>Características principales</h2>
+    <ul>
+      <li>📚 Divide la comunicación en 7 capas bien definidas.</li>
+      <li>🔄 Facilita la interoperabilidad entre diferentes sistemas y tecnologías.</li>
+      <li>⚙️ Establece estándares universales para redes.</li>
+      <li>🧩 Permite identificar y solucionar problemas en cada capa.</li>
+      <li>🌐 Es la base para entender protocolos como TCP/IP.</li>
+    </ul>
+     <img src="imagenes/model3d.png"alt="Capas del modelo osi">
+  </section>
+
+  <section>
+    <h2>Importancia</h2>
+    <p>
+      El Modelo OSI es fundamental para estudiantes y profesionales de informática porque ayuda a comprender cómo 
+      funciona la comunicación digital. Gracias a él, podemos diseñar, analizar y mejorar redes de manera ordenada 
+      y eficiente.
+    </p>
+  </section>
+
+  <div style="text-align:center;">
+    <a href="MODELO OSI 2.html" class="btn">Ir a las capas</a>
+  </div>
+
+  <footer>
+    <p>© 2026 - Proyecto académico de Luz Hernández</p>
+  </footer>
+</body>
+</html>
